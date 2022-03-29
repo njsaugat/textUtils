@@ -116,3 +116,40 @@ obj1.makeNest();
 obj1.makeSpider();
 // hwe.he=hwe();
 // console.log(hwe);
+
+const a={
+    boo:'hel',
+    sel:'hew'
+}
+
+
+const b=Object.create(a);// yo ta inheritance bata ako honta
+
+const c=Object.assign({},b);// technically nth should be copied to c bcz b bhaneko
+// sab kura prototype bata ako xa; ani  assign le prototype bata ako kura lidaina
+
+console.log(c.boo);// see it got undefined
+//but if we had done it differently then:
+const d=Object.assign({},a);// actual one which has  values without inheritance
+console.log(d.boo)// we should technically get the result as d has the values 
+// yes we got it
+// like this says alot about assign
+// like it only copies stuff that belongs to a
+// doesn't go up the prototype chain
+// ani with assign we can change the values in a and it wont affect b and d
+
+a.boo='llo';
+console.log(a);
+console.log(b);
+// if we want to copy like tyo mathi ko ni inherit garera ako then we use create
+// like create use garnu ko disadv chai like tesko  value herna sakinna
+
+console.log(d);
+// if we want to like have no relation ie no inheritance then we use assign
+//
+// it boils down to assign does shallow copy as it doesn't copies the protype that is passed to the object
+
+// create does deep copy bcz tesma prototype haru ni copied hunxa tara create ko disadv chai like print garyo vane like purai object dekhinna
+
+
+
