@@ -151,5 +151,9 @@ console.log(d);
 
 // create does deep copy bcz tesma prototype haru ni copied hunxa tara create ko disadv chai like print garyo vane like purai object dekhinna
 
-
-
+var head= null;
+var value =4;
+if(head==null){
+    head=value;
+}
+console.log(head);

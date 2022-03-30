@@ -2,6 +2,7 @@
 import './App.css';
 import TextAreaReact from './components/TextAreaReact';
 import Counter from './components/Counter'
+
 function App() {
   // const style=function(){
 
@@ -107,12 +108,14 @@ function App() {
           <textarea className="form-control" id="exampleFormControlTextarea1" rows="8"  ></textarea>
         </div>
       </form> */}
-      <TextAreaReact value="hello world, react ma file ko name capital huna parxa, bootstrap ma bhako kura ko copy ko matra bhar parna hunna"/>
+      {/* {text=} */}
+      <TextAreaReact />
       {/* yaha j value halera pathako xa uta ni tehi value halna parxa; bcz these are passed as objects ani objects ko key value haru same huna parxa */}
       {/* like aba yo vanya chai function call jastai ho; so esbata chai value pathaune ho
       uta arko page ma chai value line jasto ho
       because props vaneko like parameters jastai ho  */}
-      <Counter value='0' />
+      {/* <Counter value='0' /> */}
+      
     </>
 
 
